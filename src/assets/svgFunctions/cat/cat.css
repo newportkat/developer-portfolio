@@ -1,0 +1,33 @@
+@keyframes head-animation {
+  0% {
+    transform: rotate(0);
+  }
+  60% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes paw-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+#head {
+  animation: head-animation 4s infinite alternate ease-in-out;
+  transform-origin: center;
+}
+
+#paw {
+  animation: paw-animation 1s infinite alternate ease-in-out;
+  transform-origin: center center;
+}
