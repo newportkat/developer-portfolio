@@ -7,7 +7,10 @@ import Home from "./pages/Home"
 
 const Layout = () => {
     return (
-        <div className="bg-gradient-to-b from-gray-100 to-gray-200">
+        <div 
+        className="bg-gradient-200"
+        // className="bg-gradient-to-b from-gray-100 to-gray-300"
+        >
             <Navbar />
             <Outlet />
             <Footer />
