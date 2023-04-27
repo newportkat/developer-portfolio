@@ -178,35 +178,33 @@ const Projects = () => {
                             </div>
                         </a>
                         <p>
-                            Delve into the world of Australian politics with
-                            Tweetocracy, a web application that offers insights
-                            into the nation's political parties and Members of
-                            Parliament by analyzing their tweets and presenting
-                            their voting records.
+                            Palette Pro is a color palette generator that
+                            empowers users to create custom palettes from
+                            various color modes, adjust HSL values, lock colors,
+                            and save their favorite combinations to local
+                            storage.
                         </p>
-                        <p>
-                            Tweeetocracy is a{" "}
-                            <span className="font-bold text-orange-500">
-                                full-stack project
-                            </span>{" "}
-                            utilising the following technologies:
-                        </p>
+                        <p>Pallete Pro provides the following features:</p>
                         <ul className="flex flex-col gap-4">
                             <li>
-                                <span className="font-bold">- Frontend:</span>{" "}
-                                React and Tailwind CSS
+                                <span className="font-bold">
+                                    - Color Modes:
+                                </span>{" "}
+                                Custom logic to generate palettes according to
+                                mode selection.
                             </li>
                             <li>
-                                <span className="font-bold">- Backend:</span>{" "}
-                                Node.js with Express Server
+                                <span className="font-bold">- Name Match:</span>{" "}
+                                An integrated binary search algorithm provides
+                                the closest color name match from a database of
+                                over 3000 names.
                             </li>
                             <li>
-                                <span className="font-bold">- Deployment:</span>{" "}
-                                AWS Amplify and Elastic Beanstalk
-                            </li>
-                            <li>
-                                <span className="font-bold">- APIs:</span>{" "}
-                                Twitter API and theyvoteforyou API
+                                <span className="font-bold">
+                                    - Save Palettes:
+                                </span>{" "}
+                                Store favorite color combinations in local
+                                storage and download .png swatches.
                             </li>
                         </ul>
                         <hr className="border-4 border-orange-500 text-orange-500 xl:hidden" />
@@ -291,14 +289,13 @@ const Projects = () => {
                             </div>
                         </a>
                         <p>
-                            Delve into the world of Australian politics with
-                            Tweetocracy, a web application that offers insights
-                            into the nation's political parties and Members of
-                            Parliament by analyzing their tweets and presenting
-                            their voting records.
+                            Tackle Shop is a mock e-commerce store that
+                            demonstrates a seamless shopping experience by
+                            implementing a modern front-end and a robust
+                            back-end server.
                         </p>
                         <p>
-                            Tweeetocracy is a{" "}
+                            Tackle Shop is a{" "}
                             <span className="font-bold text-orange-500">
                                 full-stack project
                             </span>{" "}
@@ -315,11 +312,19 @@ const Projects = () => {
                             </li>
                             <li>
                                 <span className="font-bold">- Deployment:</span>{" "}
-                                AWS Amplify and Elastic Beanstalk
+                                VPS with Nginx
                             </li>
                             <li>
-                                <span className="font-bold">- APIs:</span>{" "}
-                                Twitter API and theyvoteforyou API
+                                <span className="font-bold">
+                                    - State Management:
+                                </span>{" "}
+                                useContext and useReducer hooks.
+                            </li>
+                            <li>
+                                <span className="font-bold">
+                                    - Mock Product Data:
+                                </span>{" "}
+                                REST API.
                             </li>
                         </ul>
                         <hr className="border-4 border-orange-500 text-orange-500 xl:hidden" />
