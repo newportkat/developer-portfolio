@@ -1,5 +1,4 @@
 import React from "react"
-import { handleScrollToAbout, handleScrollToProjects } from "../../utils/gsap"
 
 const Navbar = () => {
     return (
@@ -11,13 +10,13 @@ const Navbar = () => {
                 >
                     <li>TOM KATILIUS</li>
                 </a>
-                <a className="group relative cursor-pointer" onClick={handleScrollToAbout}>
+                <a className="group relative cursor-pointer" href="#about">
                     <li>
                         ABOUT
                         <span className="absolute -bottom-1 left-0 h-1 w-0 bg-orange-500 transition-all group-hover:w-full"></span>
                     </li>
                 </a>
-                <a className="group relative cursor-pointer" onClick={handleScrollToProjects}>
+                <a className="group relative cursor-pointer" href="projects">
                     <li>
                         PROJECTS
                         <span className="absolute -bottom-1 left-0 h-1 w-0 bg-orange-500 transition-all group-hover:w-full"></span>

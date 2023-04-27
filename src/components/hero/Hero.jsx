@@ -4,7 +4,6 @@ import React, { useLayoutEffect, useRef } from "react"
 import Down from "../../assets/svgFunctions/Down"
 import Cat from "../../assets/svgFunctions/cat/Cat"
 import CatMobile from "../../assets/svgFunctions/cat/CatMobile"
-import { handleScrollToAbout } from "../../utils/gsap"
 
 gsap.registerPlugin(ScrollToPlugin)
 
@@ -29,7 +28,6 @@ const Hero = () => {
 
         return () => heroCtx.revert()
     }, [])
-
 
     return (
         <div
@@ -58,7 +56,7 @@ const Hero = () => {
                     personal growth, and making a meaningful impact in the world
                     of software development.
                 </p>
-                <a onClick={handleScrollToAbout} className="self-center">
+                <a href="#about" className="self-center">
                     <Down className="h-6 w-6 animate-bounce cursor-pointer stroke-orange-500 xl:h-12 xl:w-12" />
                 </a>
             </div>
