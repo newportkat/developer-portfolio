@@ -1,11 +1,8 @@
 import { gsap } from "gsap"
-import { ScrollToPlugin } from "gsap/ScrollToPlugin"
 import React, { useLayoutEffect, useRef } from "react"
 import Down from "../../assets/svgFunctions/Down"
 import Cat from "../../assets/svgFunctions/cat/Cat"
 import CatMobile from "../../assets/svgFunctions/cat/CatMobile"
-
-gsap.registerPlugin(ScrollToPlugin)
 
 const Hero = () => {
     const hero = useRef()
