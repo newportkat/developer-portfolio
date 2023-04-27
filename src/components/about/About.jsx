@@ -1,11 +1,39 @@
-import React from "react"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import React, { useLayoutEffect, useEffect, useRef } from "react"
 import Down from "../../assets/svgFunctions/Down"
+import { handleScrollToProjects } from "../../utils/gsap"
+
+gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
+    const aboutContent = useRef()
+
+    useLayoutEffect(() => {
+        const el = aboutContent.current
+        let aboutCtx = gsap.context(() => {
+            gsap.fromTo(
+                el,
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: el,
+                    },
+                }
+            )
+        })
+
+        return () => aboutCtx.revert()
+    }, [])
+
     return (
         <div
             className="flex min-h-screen flex-col justify-center gap-10 bg-gray-900 p-4 py-12 text-gray-200 sm:px-10 md:gap-20 md:px-24"
             id="about"
+            ref={aboutContent}
         >
             <div className="flex flex-col items-center gap-8">
                 <h2>
@@ -63,7 +91,7 @@ const About = () => {
                     </ul>
                 </div>
             </div>
-            <a href="#projects" className="self-center">
+            <a onClick={handleScrollToProjects} className="self-center">
                 <Down className="h-6 w-6 animate-bounce cursor-pointer stroke-orange-500 xl:h-12 xl:w-12" />
             </a>
         </div>
