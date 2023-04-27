@@ -1,15 +1,44 @@
-import React from "react"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import React, { useLayoutEffect, useEffect, useRef } from "react"
 import PalettePro from "../../assets/palettepro.png"
 import Eye from "../../assets/svgFunctions/Eye"
 import GitHub from "../../assets/svgFunctions/GitHub"
 import TackleShop from "../../assets/tackleshop.png"
 import Tweetocracy from "../../assets/tweetocracy.png"
 
+gsap.registerPlugin(ScrollTrigger)
+
+
 const Projects = () => {
+        const projectContent = useRef()
+
+        useLayoutEffect(() => {
+            const el = projectContent.current
+            let aboutCtx = gsap.context(() => {
+                gsap.fromTo(
+                    el,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        scrollTrigger: {
+                            trigger: el,
+                        },
+                    }
+                )
+            })
+
+            return () => aboutCtx.revert()
+        }, [])
+
+
     return (
         <div
             className="flex flex-col gap-10 bg-gradient-to-b from-gray-200 to-gray-100 p-4 py-12 text-gray-800 sm:px-10 md:px-24"
             id="projects"
+            ref={projectContent}
         >
             <div className="flex flex-col items-center gap-8 xl:gap-24">
                 <div className="flex flex-col gap-5">
@@ -327,7 +356,6 @@ const Projects = () => {
                                 REST API.
                             </li>
                         </ul>
-                        <hr className="border-4 border-orange-500 text-orange-500 xl:hidden" />
                     </div>
                     <div className="hidden w-1/2 flex-col items-center gap-4 xl:flex">
                         <div className="group overflow-hidden rounded border-4 shadow-xl">
