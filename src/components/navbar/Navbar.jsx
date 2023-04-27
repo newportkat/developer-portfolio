@@ -23,7 +23,7 @@ const Navbar = () => {
                     </li>
                 </a>
                 <a
-                    href="../../../public/tom-katilius-cv.pdf"
+                    href="/tom-katilius-cv.pdf"
                     target="_blank"
                     className="cursor-pointer rounded bg-orange-600 px-2 py-1 text-white shadow-lg hover:bg-orange-500 sm:px-6 xl:mr-[5%]"
                 >
