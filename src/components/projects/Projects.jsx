@@ -1,4 +1,9 @@
 import React from "react"
+import PalettePro from "../../assets/palettepro.png"
+import Eye from "../../assets/svgFunctions/Eye"
+import GitHub from "../../assets/svgFunctions/GitHub"
+import TackleShop from "../../assets/tackleshop.png"
+import Tweetocracy from "../../assets/tweetocracy.png"
 
 const Projects = () => {
     return (
@@ -20,16 +25,67 @@ const Projects = () => {
                     </p>
                 </div>
                 <div>
-                    <div>
-                        <h3 className="text-lg font-bold underline">
+                    <div className="flex flex-col gap-4">
+                        <h3 className="text-center text-xl font-bold underline">
                             TWEETOCRACY
                         </h3>
-                        <img src="" alt="" />
-                        <div>
-                            <a href="">GITHUB REPO</a>
-                            <a href="">LIVE DEMO</a>
+                        <div className="group overflow-hidden rounded border-2">
+                            <a
+                                href="
+                            "
+                            >
+                                <img
+                                    src={Tweetocracy}
+                                    alt=""
+                                    className="transition-all duration-1000 ease-in-out group-hover:scale-125"
+                                />
+                            </a>
                         </div>
-                        <p>Description</p>
+                        <a href="">
+                            <div className="flex items-center justify-center gap-2 rounded bg-orange-500 px-2 py-1 font-bold text-white hover:bg-orange-400">
+                                <GitHub className="h-6 w-6" />
+                                <p>GITHUB REPO</p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div className="flex items-center justify-center gap-2 rounded bg-orange-500 px-2 py-1 font-bold text-white hover:bg-orange-400">
+                                <Eye className="h-6 w-6" />
+                                <p>LIVE DEMO</p>
+                            </div>
+                        </a>
+                        <p>
+                            Delve into the world of Australian politics with
+                            Tweetocracy, a web application that offers insights
+                            into the nation's political parties and Members of
+                            Parliament by analyzing their tweets and presenting
+                            their voting records.
+                        </p>
+                        <p>
+                            Tweeetocracy is a{" "}
+                            <span className="font-bold text-orange-500">
+                                full-stack project
+                            </span>{" "}
+                            utilising the following technologies:
+                        </p>
+                        <ul className="flex flex-col gap-4">
+                            <li>
+                                <span className="font-bold">- Frontend:</span>{" "}
+                                React and Tailwind CSS
+                            </li>
+                            <li>
+                                <span className="font-bold">- Backend:</span>{" "}
+                                Node.js with Express Server
+                            </li>
+                            <li>
+                                <span className="font-bold">- Deployment:</span>{" "}
+                                AWS Amplify and Elastic Beanstalk
+                            </li>
+                            <li>
+                                <span className="font-bold">- APIs:</span>{" "}
+                                Twitter API and theyvoteforyou API
+                            </li>
+                        </ul>
+                        <hr className="text-orange-500 border-4 border-orange-500"/>
                     </div>
                 </div>
             </div>
