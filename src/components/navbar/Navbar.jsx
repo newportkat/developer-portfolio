@@ -24,7 +24,7 @@ const Navbar = () => {
                 </a>
                 <a
                     href=""
-                    className="cursor-pointer rounded bg-orange-600 px-2 py-1 text-white hover:bg-orange-500 sm:px-6 xl:mr-[5%]"
+                    className="cursor-pointer rounded bg-orange-600 px-2 py-1 text-white shadow-lg hover:bg-orange-500 sm:px-6 xl:mr-[5%]"
                 >
                     <li>MY CV</li>
                 </a>
