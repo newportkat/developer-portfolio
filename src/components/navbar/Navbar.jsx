@@ -16,7 +16,7 @@ const Navbar = () => {
                         <span className="absolute -bottom-1 left-0 h-1 w-0 bg-orange-500 transition-all group-hover:w-full"></span>
                     </li>
                 </a>
-                <a className="group relative cursor-pointer" href="projects">
+                <a className="group relative cursor-pointer" href="#projects">
                     <li>
                         PROJECTS
                         <span className="absolute -bottom-1 left-0 h-1 w-0 bg-orange-500 transition-all group-hover:w-full"></span>
